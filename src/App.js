@@ -4,6 +4,7 @@ import './App.css';
 import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
+import About from './components/About';
 import {
   BrowserRouter as Router,
   Routes,
@@ -36,7 +37,7 @@ export default class App extends Component {
              height={4}
              color='#f11946'
              progress={this.state.progress} />
-
+                   <div className="container">
                 <Routes>
                       <Route exact path="/general" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="general" category="general" pagesize={this.pagesize} country={this.country}/>}/>
                       <Route exact path="/business" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="business" category="business" pagesize={this.pagesize} country={this.country}/>}/>
@@ -45,10 +46,10 @@ export default class App extends Component {
                       <Route exact path="/health" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="health" category="health" pagesize={this.pagesize} country={this.country}/>}/>
                       <Route exact path="/sports" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="sports" category="sports" pagesize={this.pagesize} country={this.country}/>}/>
                       <Route exact path="/technology" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="technology" category="technology" pagesize={this.pagesize} country={this.country}/>}/>
-                      {/* <Route exact path="/about" element={<About/>}/> */}
+                      <Route exact path="/about" element={<About/>}/>
                       
                  </Routes>
-        
+                 </div>
         </Router>
       </div>
     )
