@@ -15,12 +15,12 @@
       
       height: 29vh;
       width: 50vw;
-      top: 15vh;
+      top: 22vh;
       left: 48vw;
       position: absolute;
       margin-top: 12vh;
-      color: white;
-      
+     
+      color: whitesmoke;
   }
 
   .button{
@@ -33,4 +33,9 @@
     padding: 1vh 2vh;
     color: black;
 
+  }
+  .font{
+      font-family:cursive;
+      font-size: 2vw;
+     
   }

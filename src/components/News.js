@@ -76,26 +76,7 @@ export default class News extends Component {
                 loading: false
          });
      }
-//       handleprev =async ()=>{
-           
-//        this.setState({
-//                     page: this.state.page-1,
-                   
-//              })
-//              this.updatepage();
-//       }
-
-//       handlenext = async()=>{
-      
-//        this.setState({
-//               page: this.state.page+1,
-            
-//        })
-      
-//      this.updatepage();
-      
-            
-//       }
+    
   render() {
 
     return (
@@ -127,11 +108,7 @@ export default class News extends Component {
              
               
 
-             {/* <div className="container d-flex justify-content-center">
-                    <button className="btn btn-dark mx-2" disabled={this.state.page<=1} onClick={this.handleprev}> &larr; previous</button>
-                    <button className="btn btn-dark" disabled={(this.state.page +1 > Math.ceil(this.state.totalResults/6))} onClick={this.handlenext}>next &rarr;</button>
-             </div>         */}
-  
+               
 
       </>
     )

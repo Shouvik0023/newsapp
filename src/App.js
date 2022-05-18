@@ -43,7 +43,7 @@ export default class App extends Component {
              progress={this.state.progress} />
                    
                 <Routes>
-                <Route exact path='/' element={<Home/>}/>
+                      <Route exact path='/' element={<Home/>}/>
                       <Route exact path="/about" element={<About/>}/>
                       <Route exact path='/home' element={<Home/>}/>
                       
