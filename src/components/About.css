@@ -1,0 +1,21 @@
+.background-about{
+
+    background-image: url("../images/about.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    color: black;
+    opacity: 0.8;
+  }
+
+  .m-top{
+      position: absolute;
+      margin: auto;
+      left: 7vw;
+      margin-top: 5vw;
+  }
+
+  
