@@ -10,15 +10,15 @@ export default class Navbar extends Component {
       <div>
           <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-primary "  >
   <div className="container-fluid">
-    <img src="newslogo.jpg" alt=""  style={{height: "30px" ,borderRadius: "20px"}}/>
-    <a className="navbar-brand mx-2" href="/">News-App</a>
+    <img src="logo.jpg" alt=""  style={{height: "2vw",width: "2vw" ,borderRadius: "20px"}}/>
+    <a className="navbar-brand mx-2" href="/">Global-News</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-link active" aria-current="page" href="/">Home</a>
-        <a className="nav-link active" href="/">Features</a>
+        <a className="nav-link active" aria-current="page" href="/home">Home</a>
+      
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle active" href="/general" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {this.props.category}
