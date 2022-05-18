@@ -10,7 +10,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-// import About from './components/About';
+
 import LoadingBar from 'react-top-loading-bar';
 import Home from './components/Home';
 
@@ -28,8 +28,11 @@ export default class App extends Component {
         setProgress = (progress)=>{
           this.setState({progress: progress})
         }
+
+      
  
   render() {
+  
     return (
       <div>
         <Router>
@@ -38,10 +41,12 @@ export default class App extends Component {
              height={4}
              color='#f11946'
              progress={this.state.progress} />
-                   <div className="container">
+                   
                 <Routes>
+                <Route exact path='/' element={<Home/>}/>
                       <Route exact path="/about" element={<About/>}/>
                       <Route exact path='/home' element={<Home/>}/>
+                      
                       <Route exact path="/general" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="general" category="general" pagesize={this.pagesize} country={this.country}/>}/>
                       <Route exact path="/business" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="business" category="business" pagesize={this.pagesize} country={this.country}/>}/>
                       <Route exact path="/entertainment" element={<News apiKey={this.apiKey} setProgress={this.setProgress} key="entertainment" category="entertainment" pagesize={this.pagesize} country={this.country}/>}/>
@@ -52,7 +57,7 @@ export default class App extends Component {
                      
                       
                  </Routes>
-                 </div>
+                
         </Router>
       </div>
     )

@@ -1,0 +1,36 @@
+.background{
+
+    background-image: url("../images/bg_home.jpg");
+    position: relative;
+   background-size: cover;
+    height: 100vh;
+    width: 100vw;
+   
+    background-repeat: no-repeat;
+  
+    opacity: 0.8;
+  }
+
+  .paragraph{
+      
+      height: 29vh;
+      width: 50vw;
+      top: 15vh;
+      left: 48vw;
+      position: absolute;
+      margin-top: 12vh;
+      color: white;
+      
+  }
+
+  .button{
+     position: absolute;
+     top: 50vh;
+    left: 50vw;
+    background-color: aqua;
+    border: 2px solid orangered;
+    border-radius: 3vh;
+    padding: 1vh 2vh;
+    color: black;
+
+  }

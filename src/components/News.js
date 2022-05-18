@@ -3,6 +3,7 @@ import Newsitem from './Newsitem'
 import Spinner from './Spinner'
 import PropTypes from 'prop-types'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import "./Home.css"
 
 export default class News extends Component {
         
@@ -99,6 +100,7 @@ export default class News extends Component {
 
     return (
            <>
+          
         <div className="container my-3">
       <h3 className='bg-warning text-center' style={{marginTop: "60px"}} >TODAYS TOP NEWS FROM {this.capitalizeFirstLetter(this.props.category)}</h3>
       {this.state.loading && <Spinner />}
@@ -130,7 +132,7 @@ export default class News extends Component {
                     <button className="btn btn-dark" disabled={(this.state.page +1 > Math.ceil(this.state.totalResults/6))} onClick={this.handlenext}>next &rarr;</button>
              </div>         */}
   
-      
+
       </>
     )
   }

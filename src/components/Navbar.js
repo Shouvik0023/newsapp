@@ -10,8 +10,8 @@ export default class Navbar extends Component {
       <div>
           <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-primary "  >
   <div className="container-fluid">
-    <img src="logo.jpg" alt=""  style={{height: "2vw",width: "2vw" ,borderRadius: "20px"}}/>
-    <a className="navbar-brand mx-2" href="/">Global-News</a>
+    <img src="../images/logo1.jpg" alt=""  style={{height: "2vw",width: "2vw" ,borderRadius: "20px"}}/>
+    <a className="navbar-brand mx-2" href='/'>Global-News</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
