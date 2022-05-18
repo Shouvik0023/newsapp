@@ -27,8 +27,8 @@
      position: absolute;
      top: 50vh;
     left: 50vw;
-    background-color: aqua;
-    border: 2px solid orangered;
+    background-image: linear-gradient(rgb(15, 123, 238),aqua);
+    /* border: 2px solid orangered; */
     border-radius: 3vh;
     padding: 1vh 2vh;
     color: black;
