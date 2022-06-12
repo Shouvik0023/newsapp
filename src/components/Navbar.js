@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import logo from "../images/logo.jpg"
 
 
 export default class Navbar extends Component {
@@ -10,7 +11,7 @@ export default class Navbar extends Component {
       <div>
           <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-primary "  >
   <div className="container-fluid">
-    <img src="../images/logo.jpg" alt=""  style={{height: "2vw",width: "2vw" ,borderRadius: "20px"}}/>
+    <img src={logo}  alt=""  style={{height: "2vw",width: "2vw",borderRadius: "2vw"}}/>
     <a className="navbar-brand mx-2" href='/'>Global-News</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
